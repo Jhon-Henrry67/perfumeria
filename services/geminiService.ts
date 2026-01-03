@@ -10,7 +10,7 @@ Usa un tono elegante pero minimalista. Habla siempre en español.`;
 
 export async function getFragranceAdvice(history: ChatMessage[]) {
   try {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",
       contents: history.map(h => ({ role: h.role === 'user' ? 'user' : 'model', parts: [{ text: h.content }] })),
