@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redfragances</title>
+  <title>Redfragances - Lujo en Fragancias</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -48,6 +48,10 @@
       to { opacity: 1; transform: translateY(0); }
     }
     .animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
+    
+    body {
+      background-color: #140e1d;
+    }
   </style>
 <script type="importmap">
 {
@@ -62,5 +66,7 @@
 </head>
 <body class="bg-background-dark text-white font-display overflow-x-hidden">
   <div id="root"></div>
+  <!-- Esta línea es CRUCIAL para que la app no se vea en negro -->
+  <script type="module" src="./index.tsx"></script>
 </body>
 </html>
