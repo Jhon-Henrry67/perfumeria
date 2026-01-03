@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Redfragances - Descubrimiento de Perfumes de Lujo",
+  "description": "Una plataforma premium de descubrimiento de perfumes con recomendaciones de fragancias impulsadas por IA y una experiencia de compra fluida.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
